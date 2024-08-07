@@ -64,4 +64,7 @@ resource "google_compute_instance" "vm_0001" {
       image = "debian-cloud/debian-9"
     }
   }
+  metadata = {
+    block-project-ssh-keys = true
+  }
 }
